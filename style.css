@@ -144,6 +144,75 @@ footer {
         text-align: center;
     }
 }
+
+.marquee {
+    position: absolute;
+    width: 100%;
+    top: -100%;
+    animation: scroll 5s linear infinite;
+}
+
+JavaScriptで、テキストを上から下に流れるようにするためには、HTMLとCSSを組み合わせてアニメーションを作成する必要があります。以下に簡単な例を示します。
+
+HTML:
+html
+コードをコピーする
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>流れる名言</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="marquee">
+            <p>愛はすべての感情の中で最も自己中心的である。 - オスカー・ワイルド</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+CSS (styles.css):
+css
+コードをコピーする
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 300px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.marquee {
+    position: absolute;
+    width: 100%;
+    top: -100%;
+    animation: scroll 5s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -100%;
+    }
+}
+
 /* 
 .signup-button {
     display: inline-block;
