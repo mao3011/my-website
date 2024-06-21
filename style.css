@@ -1,0 +1,161 @@
+/* .new-tegomin-regular {
+    font-family: "New Tegomin", serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+body {
+    /* font-family: Arial, sans-serif; */
+    font-family: "New Tegomin", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f5f0;
+}
+
+header {
+    background-color: #f8f5f0;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-btn, .reservation-btn, .language-select, .search-icon {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-icon {
+    font-size: 24px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.sub-nav {
+    border-top: 1px solid #ddd;
+    padding: 10px 10%;
+    background-color: #f8f5f0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+.hero {
+    background: url('/natume/image/S__280682500.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+    border-top: 1px solid #e1e1e1;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-info, .newsletter {
+    flex: 1;
+    min-width: 300px; /* 縮小時の最小幅を指定 */
+    margin: 20px;
+}
+
+.contact-info h2, .newsletter h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contact-info p, .newsletter p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+.map-link {
+    display: block;
+    margin-top: 10px;
+    color: #000;
+    text-decoration: underline;
+}
+/* メディアクエリ */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .newsletter {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+/* 
+.signup-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+} */
+
+/* .signup-button:hover {
+    background-color: #555;
+} */
