@@ -1,10 +1,4 @@
-/* .new-tegomin-regular {
-    font-family: "New Tegomin", serif;
-    font-weight: 400;
-    font-style: normal;
-  } */
 body {
-    /* font-family: Arial, sans-serif; */
     font-family: "New Tegomin", serif;
     font-weight: 400;
     font-style: normal;
@@ -112,7 +106,7 @@ footer {
 
 .contact-info, .newsletter {
     flex: 1;
-    min-width: 300px; /* 縮小時の最小幅を指定 */
+    min-width: 300px;
     margin: 20px;
 }
 
@@ -132,6 +126,7 @@ footer {
     color: #000;
     text-decoration: underline;
 }
+
 /* メディアクエリ */
 @media (max-width: 768px) {
     .footer-content {
@@ -145,13 +140,6 @@ footer {
     }
 }
 
-.marquee {
-    position: absolute;
-    width: 100%;
-    top: -100%;
-    animation: scroll 5s linear infinite;
-}
-
 .container {
     width: 300px;
     height: 100px;
@@ -160,6 +148,7 @@ footer {
     background-color: white;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
 }
 
 .marquee {
@@ -178,7 +167,6 @@ footer {
     }
 }
 
-/* 
 .signup-button {
     display: inline-block;
     margin-top: 20px;
@@ -188,8 +176,8 @@ footer {
     border: none;
     cursor: pointer;
     text-transform: uppercase;
-} */
+}
 
-/* .signup-button:hover {
+.signup-button:hover {
     background-color: #555;
-} */
+}
