@@ -76,7 +76,7 @@ nav {
     text-decoration: underline;
 }
 .hero {
-    background: url('/natume/image/S__280682500.jpg') no-repeat center center/cover;
+    background: url('/S__280682500.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
