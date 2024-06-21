@@ -1,5 +1,3 @@
-// JavaScriptコードは特に必要ありませんが、複数の名言をランダムに表示したい場合に備えて、次のような機能を追加できます。
-
 const quotes = [
     "愛はすべての感情の中で最も自己中心的である。 - オスカー・ワイルド",
     "愛は魂の安らぎであり、心の慰めである。 - ヴィクター・ユーゴー",
@@ -16,4 +14,3 @@ marqueeElement.textContent = quotes[Math.floor(Math.random() * quotes.length)];
 setInterval(() => {
     marqueeElement.textContent = quotes[Math.floor(Math.random() * quotes.length)];
 }, 5000); // 5秒ごとに更新
-
